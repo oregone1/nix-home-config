@@ -27,6 +27,12 @@
     } // (import ./programs/starship.nix { inherit pkgs; });
   };
 
+  services = {
+    screen-locker = {
+      enable = true;
+    } // (import ./services/screen-locker.nix { inherit pkgs; });
+  };
+
   xsession = {
     windowManager = {
       i3 = {
@@ -37,6 +43,7 @@
 
   home.packages = with pkgs; [
     calc
+    i3lock-pixeled
     filezilla
     espeak-ng
     imagemagick

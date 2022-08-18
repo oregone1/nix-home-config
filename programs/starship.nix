@@ -2,7 +2,7 @@
 {
   enableBashIntegration = true;
   settings = {
-    add_newlines = false;
+    add_newline = false;
     format = "$all";
     scan_timeout = 10;
 
@@ -37,9 +37,8 @@
     directory = {
       truncate_to_repo = true;
       use_logical_path = true;
-      format = "[$path](cyan bold)[$read_only](red)";
+      format = "[$path](cyan bold)[$read_only](red) ";
       read_only = "🔒";
-      truncate_symbol = "...";
       home_symbol = "~";
     };
 
@@ -63,7 +62,7 @@
     git_status = {
       format = "([$all_status$ahead_behind]($style) )";
       style = "red bold";
-      stashed = "\$";
+      stashed = "$";
       ahead = "⇡";
       behind = "⇣";
       up_to_date = "";
