@@ -11,7 +11,7 @@
     vim-javascript
 
     # colorscheme
-    catppuccin-nvim
+    catppuccin-vim
 
     # autocomplete/lsp
     YouCompleteMe
@@ -27,7 +27,10 @@
   ];
   extraConfig = ''
   syntax on
-  colorscheme catppuccin
+  colorscheme catppuccin_mocha
+  
+  set relativenumber
+  set termguicolors
 
   " open nerdtree; focus file
   autocmd StdinReadPre * let s:std_in=1

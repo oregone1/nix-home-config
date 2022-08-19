@@ -46,7 +46,7 @@
       format = "on [$symbol$branch]($style)(:[$remote]($style)) ";
       symbol = " ";
       style = "bold purple";
-      truncation_length = 9223372036854775807;
+      truncation_length = 9223372036854775807; # ???
       truncation_symbol = "...";
     };
 
