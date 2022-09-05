@@ -15,31 +15,30 @@
 
     # autocomplete/lsp
     YouCompleteMe
+    nvim-lspconfig
     lsp-status-nvim
     nvim-treesitter
+    nvim-cmp
+    cmp-nvim-lua
+    cmp_luasnip
+    luasnip
+    cmp-nvim-lsp
 
     # ui
-    nerdtree
+    nvim-tree-lua
     vim-nerdtree-syntax-highlight
     vim-nerdtree-tabs
     tabline-nvim
     vim-devicons
+    telescope-nvim
   ];
   extraConfig = ''
-  syntax on
-  colorscheme catppuccin_mocha
-  
-  set relativenumber
-  set termguicolors
-
-  " open nerdtree; focus file
-  autocmd StdinReadPre * let s:std_in=1
-  autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
-     
-  autocmd BufRead * NERDTree
-
-  let NERDTreeMapOpenInTab='<ENTER>'
-  nmap <TAB> :NERDTreeFocusToggle<CR>
-  nmap <S-Tab> :NERDTreeToggle<CR>
+    lua << EOF
+      ${builtins.readFile ./assets/config.lua}
+      ${builtins.readFile ./assets/tree.lua}
+      ${builtins.readFile ./assets/keymap.lua}
+      ${builtins.readFile ./assets/lspconfig.lua}
+      ${builtins.readFile ./assets/telescope.lua}
+    EOF
   '';
 }

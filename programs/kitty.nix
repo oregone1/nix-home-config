@@ -39,19 +39,6 @@
     # clipboard
     "ctrl+shift+c"      = "copy_to_clipboard";
     "ctrl+shift+v"      = "paste_from_clipboard";
-  
-    # window management
-    "ctrl+enter"        = "new_window";
-    "ctrl+w"            = "close_window";
-    "ctrl+shift+."      = "next_window";
-    "ctrl+shift+,"      = "previous_window";
-
-    "ctrl+shift+right"  = "move_window_forward";
-    "ctrl+shift+up"     = "move_window_up";
-    "ctrl+shift+left"   = "move_window_backward";
-    "ctrl+shift+down"   = "move_window_to_bottom";
-
-    "ctrl+shift+r"      = "start_resizing_window";
   };
 }
 

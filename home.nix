@@ -10,6 +10,14 @@
       enable = true;
     } // (import ./programs/neovim.nix { inherit pkgs; });
 
+    helix = {
+      enable = true;
+    } // (import ./programs/helix.nix { inherit pkgs; });
+
+    kakoune = {
+      enable = true;
+    } // (import ./programs/kakoune.nix { inherit pkgs; }); 
+    
     i3status-rust = {
       enable = true;
     } // (import ./programs/i3status-rust.nix { inherit pkgs; });
@@ -28,9 +36,12 @@
   };
 
   services = {
-    screen-locker = {
+  # screen-locker = {
+  #   enable = true;
+  # } // (import ./services/screen-locker.nix { inherit pkgs; });
+    polybar = {
       enable = true;
-    } // (import ./services/screen-locker.nix { inherit pkgs; });
+    } // (import ./services/polybar.nix { inherit pkgs; });
   };
 
   xsession = {
@@ -40,6 +51,10 @@
       } // (import ./programs/i3.nix { inherit pkgs; inherit lib; });
     };
   };
+
+  #gtk = {
+  #  enable = true;
+  #} // (import ./misc/gtk.nix { inherit pkgs; });
 
   home.packages = with pkgs; [
     calc
@@ -66,6 +81,16 @@
     ripgrep
     bat
     picom
+    
+    # lsp servers
+    nodePackages.vscode-html-languageserver-bin
+    nodePackages.vscode-css-languageserver-bin
+    nodePackages.yaml-language-server 
+    nodePackages.pyright
+    texlab
+    rust-analyzer  
+    haskell-language-server
+    rnix-lsp
   ];
 
   home.stateVersion = "22.05";

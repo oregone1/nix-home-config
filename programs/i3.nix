@@ -93,10 +93,10 @@
         text = "#ebdbb2";
       };
       unfocused = {
-        background = "#3c3836";
-        border = "#3c3836";
-        childBorder = "#3c3836";
-        indicator = "#3c3836";
+        background = "#1E1E2E";
+        border = "#1E1E2E";
+        childBorder = "#1E1E2E";
+        indicator = "#1E1E2E";
         text = "#ebdbb2";
       };
       urgent = {
@@ -122,7 +122,7 @@
           names = [ "monospace" "Font Awesome 6 Free" "Font Awesome 6 Brands" ];
           size = 8.0;
         };
-        position = "bottom";
+        position = "top";
         colors = {
           background = "#1E1D2F";
         # seperator = "#6E6C7E";
