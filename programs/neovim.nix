@@ -11,7 +11,7 @@
     vim-javascript
 
     # colorscheme
-    catppuccin-vim
+    catppuccin-nvim
 
     # autocomplete/lsp
     YouCompleteMe
@@ -25,6 +25,7 @@
     cmp-nvim-lsp
 
     # ui
+    lualine-nvim
     nvim-tree-lua
     vim-nerdtree-syntax-highlight
     vim-nerdtree-tabs
@@ -39,6 +40,7 @@
       ${builtins.readFile ./assets/keymap.lua}
       ${builtins.readFile ./assets/lspconfig.lua}
       ${builtins.readFile ./assets/telescope.lua}
+      ${builtins.readFile ./assets/lualine.lua}
     EOF
   '';
 }

@@ -21,4 +21,6 @@ opt.termguicolors = true
 opt.relativenumber = true
 opt.cursorline = true
 
-vim.cmd('colorscheme catppuccin_mocha')
+vim.g.catppuccin_flavour = "mocha"
+require("catppuccin").setup()
+vim.cmd "colorscheme catppuccin"

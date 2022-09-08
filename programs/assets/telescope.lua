@@ -1,4 +1,4 @@
-require('telescope').setup{
+require('telescope').setup({
   defaults = {
     prompt_prefix = "λ ",
     selection_caret = "-> ",
@@ -29,4 +29,4 @@ require('telescope').setup{
     -- }
     -- please take a look at the readme of the extension you want to configure
   }
-}
+})

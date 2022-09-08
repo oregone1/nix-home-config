@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   bars = {
-    bottom_bar = {
+    top_bar = {
       blocks = [
         {
           block = "external_ip";
@@ -66,6 +66,7 @@
             warning_fg = "#F8BD96";
             critical_fg = "#F28FAD";
             separator_fg = "#F28FAD";
+            separator = "|";
           };
         };
       };

@@ -117,7 +117,7 @@
 
     bars = [
       {
-        statusCommand = "i3status-rs /home/natalie/.config/i3status-rust/config-bottom_bar.toml";
+        statusCommand = "i3status-rs /home/natalie/.config/i3status-rust/config-top_bar.toml";
         fonts = {
           names = [ "monospace" "Font Awesome 6 Free" "Font Awesome 6 Brands" ];
           size = 8.0;

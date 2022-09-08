@@ -81,7 +81,10 @@
     ripgrep
     bat
     picom
-    
+    cargo
+    rustc
+    crate2nix
+
     # lsp servers
     nodePackages.vscode-html-languageserver-bin
     nodePackages.vscode-css-languageserver-bin
