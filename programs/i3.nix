@@ -54,6 +54,8 @@
       "${mod}+v"           = "split v";
       "${mod}+f"           = "fullscreen toggle";
       "${mod}+space"       = "floating toggle";
+
+      "${mod}+k"           = "exec echo \"cat /dev/urandom | head -c 128 | xclip -selection c\"";
     };
 
     modes = {

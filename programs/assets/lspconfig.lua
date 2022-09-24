@@ -33,7 +33,7 @@ capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 local lspconfig = require('lspconfig')
 
---local servers = { 'rnix', 'rust_analyzer', 'pyright', 'yamlls', 'cssls', 'ghcide', 'html', 'hls', 'jsonls'}
+local servers = { 'rnix', 'rust_analyzer', 'pyright', 'yamlls', 'cssls', 'ghcide', 'html', 'hls', 'jsonls'}
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,

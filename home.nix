@@ -33,6 +33,10 @@
     starship = {
       enable = true;
     } // (import ./programs/starship.nix { inherit pkgs; });
+    
+    texlive = {
+      enable = true;
+    } // (import ./programs/texlive.nix { inherit pkgs; });
   };
 
   services = {
