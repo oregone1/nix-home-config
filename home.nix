@@ -37,6 +37,10 @@
     texlive = {
       enable = true;
     } // (import ./programs/texlive.nix { inherit pkgs; });
+
+    zathura = {
+      enable = true;
+    } // (import ./programs/zathura.nix { inherit pkgs; });
   };
 
   services = {
@@ -79,7 +83,7 @@
     discord-canary
     gnome.gnome-screenshot
     xfce.xfce4-taskmanager
-    obsidian
+    # obsidian
     lxappearance
     neovide
     ripgrep

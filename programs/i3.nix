@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{pkgs, lib, ... }:
 {
   package = pkgs.i3-gaps;
   config = {
@@ -46,7 +46,7 @@
       "${mod}+Right"       = "focus right";
 
       "${mod}+Shift+Left"  = "move left";
-      "${mod}+Shift+Down"  = "move right";
+      "${mod}+Shift+Down"  = "move down";
       "${mod}+Shift+Up"    = "move up";
       "${mod}+Shift+Right" = "move right";
 

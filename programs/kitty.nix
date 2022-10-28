@@ -4,9 +4,10 @@
     name = "Fira Code";
     size = 10;
   };
-  theme = "Catppuccin";
+  theme = "Catppuccin-Mocha";
   settings = {
     # enable ligatures
+    # theme = "Catppuccin";
     font_family                 = "Fira Code Regular Nerd Font Complete";
     disable_ligatures           = "never";
     font_features               = "FiraCodeNerdFontComplete-Regular";

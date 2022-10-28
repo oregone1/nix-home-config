@@ -32,6 +32,10 @@
     tabline-nvim
     vim-devicons
     telescope-nvim
+
+    # misc
+    vimtex
+    vim-css-color
   ];
   extraConfig = ''
     lua << EOF
@@ -42,5 +46,6 @@
       ${builtins.readFile ./assets/telescope.lua}
       ${builtins.readFile ./assets/lualine.lua}
     EOF
+    ${builtins.readFile ./assets/vimtex.vim}
   '';
 }
