@@ -41,6 +41,10 @@
     zathura = {
       enable = true;
     } // (import ./programs/zathura.nix { inherit pkgs; });
+
+    chromium = {
+      enable = true;
+    } // (import ./programs/chromium.nix { inherit pkgs; });
   };
 
   services = {
@@ -57,6 +61,14 @@
       i3 = {
         enable = true;
       } // (import ./programs/i3.nix { inherit pkgs; inherit lib; });
+    };
+  };
+
+  wayland = {
+    windowManager = {
+      sway = {
+        enable = true;
+      } // (import ./programs/sway.nix { inherit pkgs; inherit lib; inherit (config.lib.formats.rasi) mkLiteral; });
     };
   };
 
@@ -79,7 +91,7 @@
     tree
     yt-dlp
     feh
-    firefox
+  #    firefox
     discord-canary
     gnome.gnome-screenshot
     xfce.xfce4-taskmanager
@@ -90,8 +102,10 @@
     bat
     picom
     cargo
-    rustc
     crate2nix
+    rofi-wayland
+    firefox-wayland
+    swaybg
 
     # lsp servers
     nodePackages.vscode-html-languageserver-bin

@@ -1,8 +1,9 @@
 { pkgs, mkLiteral, ... }:
 {
   font = "JetBrainsMono Nerd Font 14";
+  package = pkgs.rofi-wayland;
   extraConfig = {
-    modi = "run,drun,window";
+    modi = "run,drun";
     lines = 5;
     show-icons = true;
     icon-theme = "Oranchelo";
@@ -12,7 +13,6 @@
     hide-scrollbar = true;
     display-drun  = "   Apps ";
     display-run = "   Run ";
-    display-window = " 﩯  window";
     display-Network = " 󰤨  Network";
     sidebar-mode = true;
   };

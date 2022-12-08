@@ -46,6 +46,5 @@
       ${builtins.readFile ./assets/telescope.lua}
       ${builtins.readFile ./assets/lualine.lua}
     EOF
-    ${builtins.readFile ./assets/vimtex.vim}
   '';
 }

@@ -4,6 +4,8 @@ local opts = { noremap = true, silent = true }
 
 vim.g.mapleader = ' '
 
+map("t", "<Esc>", "<C-\\><C-n>", opts)
+
 -- misc
 map('n', '<leader>rr', ':source $MYVIMRC<CR>', {noremap=false, silent=true})
 
