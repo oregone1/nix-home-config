@@ -17,6 +17,7 @@
 
   hardware = {
     rtl-sdr.enable = true;
+    sensor.iio.enable = true;
   };
 
   virtualisation = {
@@ -55,6 +56,8 @@
       enable = true;
       forwardX11 = true;
     };
+
+    avahi.enable = true;
 
     xserver = {
       enable = true;
@@ -97,7 +100,7 @@
   users.users.natalie = {
     isNormalUser = true;
     shell = pkgs.zsh;
-    extraGroups = [ "wheel" "networkmanager" "plugdev" "libvirtd" ]; 
+    extraGroups = [ "wheel" "networkmanager" "plugdev" "libvirtd" "iio" ]; 
   };
 
   environment = {

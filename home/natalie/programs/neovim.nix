@@ -46,6 +46,5 @@
       ${builtins.readFile ./assets/neovim/lspconfig.lua}
       ${builtins.readFile ./assets/neovim/telescope.lua}
       ${builtins.readFile ./assets/neovim/lualine.lua}
-    EOF
   '';
 }

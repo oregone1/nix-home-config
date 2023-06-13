@@ -20,10 +20,10 @@
   theme = {
     # catppuccin
     "*" = {
-      bg-col = mkLiteral "#1E1D2F";
-      bg-col-light = mkLiteral "#1E1D2F";
-      border-col = mkLiteral "#1E1D2F";
-      selected-col = mkLiteral "#1E1D2F";
+      bg-col = mkLiteral "#1E1E2E";
+      bg-col-light = mkLiteral "#1E1E2E";
+      border-col = mkLiteral "#1E1E2E";
+      selected-col = mkLiteral "#1E1E2E";
       blue = mkLiteral "#7aa2f7";
       fg-col = mkLiteral "#D9E0EE";
       fg-col2 = mkLiteral "#F28FAD";

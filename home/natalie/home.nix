@@ -61,6 +61,10 @@
     ncmpcpp = {
       enable = true;
     } // (import ./programs/ncmpcpp.nix { inherit pkgs; });
+
+    emacs = {
+      enable = true;
+    } // (import ./programs/emacs.nix { inherit pkgs; });
   };
 
   services = {
@@ -73,6 +77,9 @@
     mpd = {
       enable = true;
     } // (import ./services/mpd.nix { inherit pkgs; });
+    dunst = {
+      enable = true;
+    } // (import ./programs/dunst.nix { inherit pkgs; });
   };
 
   xsession = {
@@ -101,7 +108,7 @@
 
   home.packages = with pkgs; [
 
-    awesome-config
+    # awesome-config
 
     calc
     i3lock-pixeled
@@ -115,8 +122,6 @@
     python39
     simplescreenrecorder
     tree
-    yt-dlp
-    feh
     st
     #    firefox
     discord-canary
